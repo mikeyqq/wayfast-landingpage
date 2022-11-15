@@ -13,5 +13,5 @@ module.exports = {
       "border-wayfast-green": "#208679",
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/aspect-ratio")],
 };
