@@ -47,16 +47,41 @@ export default function Info({}: Props) {
         </div>
       </div>
       {/* MOBILE */}
-      <div className="grid md:hidden grid-cols-3 mt-20">
+      <div className="grid grid-cols-3 gap-4 mt-20 md:hidden">
         <div>
-          <img src="/steps_desk_vertical.svg" />
+          <div className="">
+            <div className="">
+              <img src="/steps_desk_vertical.svg" className="-my-auto" />
+            </div>
+          </div>
         </div>
-        <div></div>
+        <div className="col-span-2 flex flex-col gap-52">
+          <div className="flex flex-col justify-end">
+            <h3 className="text-left text-black text-2xl font-medium tracking-widest">
+              Weigh
+            </h3>
+            <p className="text-left text-gray-700">Just place the plant.</p>
+            <span> We automatically capture your data.</span>
+          </div>
+          <div className="flex flex-col justify-end">
+            <h3 className="pt-1 text-left text-black text-2xl font-medium tracking-widest">
+              Repeat
+            </h3>
+            <p className="text-left text-gray-700">
+              Place a new plant every 3 seconds. Clock in at 1,200+ plants per
+              hour.
+            </p>
+          </div>
+          <div className="flex flex-col justify-end">
+            <h3 className="pt-1 text-left text-black text-2xl font-medium tracking-widest">
+              Export
+            </h3>
+            <p className="text-left text-gray-700 pt-2">
+              Upload your harvest file into your preferred software.
+            </p>
+          </div>
+        </div>
       </div>
     </main>
   );
 }
-
-//<h3 class="pt-4 text-center text-black text-3xl font-medium tracking-widest">Weigh</h3>
-
-//<p class="text-center text-gray-700 w-1/2 mx-auto pt-4">Just place the plant.<span class="block">We automatically capture your data.</span></p>
