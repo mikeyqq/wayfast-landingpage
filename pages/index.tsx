@@ -5,6 +5,7 @@ import Header from "../components/Header";
 import Intro from "../components/Intro";
 import Info from "../components/Info";
 import Feature from "../components/Feature";
+import Product from "../components/Product";
 
 const Home: NextPage = () => {
   return (
@@ -25,6 +26,7 @@ const Home: NextPage = () => {
       <Feature />
 
       {/* Products */}
+      <Product />
 
       {/* Harvest In The Dark */}
 

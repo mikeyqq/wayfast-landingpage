@@ -140,6 +140,11 @@
   #feature-main-h1 {
     color: white;
   }
+
+  #product-quote-btn:hover {
+    color: black;
+    background-color: white;
+  }
 }
 
 /* font-thin text-base hover:font-medium text-white*/
