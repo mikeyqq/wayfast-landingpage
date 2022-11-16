@@ -4,6 +4,7 @@ import Image from "next/image";
 import Header from "../components/Header";
 import Intro from "../components/Intro";
 import Info from "../components/Info";
+import Feature from "../components/Feature";
 
 const Home: NextPage = () => {
   return (
@@ -21,6 +22,7 @@ const Home: NextPage = () => {
       <Info />
 
       {/* Features & Benefits */}
+      <Feature />
 
       {/* Products */}
 
