@@ -6,6 +6,7 @@ import Intro from "../components/Intro";
 import Info from "../components/Info";
 import Feature from "../components/Feature";
 import Product from "../components/Product";
+import Battery from "../components/Battery";
 
 const Home: NextPage = () => {
   return (
@@ -29,6 +30,7 @@ const Home: NextPage = () => {
       <Product />
 
       {/* Harvest In The Dark */}
+      <Battery />
 
       {/* Partners */}
 
