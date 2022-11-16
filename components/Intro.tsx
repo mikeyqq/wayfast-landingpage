@@ -41,8 +41,22 @@ export default function Section({}: Props) {
           ></iframe>
         </div>
 
-        <div className="lg:hidden"></div>
+        <div className="lg:hidden">
+          <div className="mt-12 flex items-center justify-center">
+            <a
+              href="#contact"
+              id="request-quote-btn"
+              className="mx-2 flex items-center justify-center px-10 py-3 border-2 border-wayfast-green rounded-2xl text-base bg-wayfast-green text-white md:py-4"
+            >
+              REQUEST QUOTE
+            </a>
+          </div>
+        </div>
       </main>
     </div>
   );
 }
+
+//mt-12 flex items-center justify-center
+
+//mx-2 flex items-center justify-center px-10 py-3 border-2 border-wayfastGreen rounded-2xl text-base bg-wayfastGreen hover:bg-white text-white hover:text-black md:py-4

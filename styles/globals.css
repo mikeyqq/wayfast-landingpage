@@ -93,6 +93,11 @@
     color: white;
     border-style: solid;
   }
+
+  #request-quote-btn:hover {
+    color: black;
+    background-color: white;
+  }
 }
 
 /* font-thin text-base hover:font-medium text-white*/
