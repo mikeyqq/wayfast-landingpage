@@ -8,6 +8,7 @@ import Feature from "../components/Feature";
 import Product from "../components/Product";
 import Battery from "../components/Battery";
 import Partner from "../components/Partner";
+import Contact from "../components/Contact";
 
 const Home: NextPage = () => {
   return (
@@ -37,6 +38,7 @@ const Home: NextPage = () => {
       <Partner />
 
       {/* Contact */}
+      <Contact />
 
       {/* Footer */}
     </div>
