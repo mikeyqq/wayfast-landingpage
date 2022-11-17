@@ -1,8 +1,42 @@
 import React from "react";
-
+import { useState } from "react";
 type Props = {};
 
 export default function Contact({}: Props) {
+  const [formValue, setFormValue] = useState({
+    name: "",
+    number: "",
+    email: "",
+    company: "",
+    hanging: "",
+    platform: "",
+    predict: "",
+    other: "",
+  });
+
+  // This creates an array with 4 false value representing the 4 check boxes. This will show error message for no checkbox
+  const [checkedState, setCheckedState] = useState(new Array(4).fill(false));
+
+  const handleFormValueChange = (e) => {
+    const { name, value } = e.target;
+
+    setFormValue((prevState) => {
+      return {
+        ...prevState,
+        [name]: value,
+      };
+    });
+  };
+
+  const { name, number, email, company, hanging, platform, predict, other } =
+    formValue;
+
+  const [submitting, setSubmitting] = useState(false);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
+
   return (
     <form className="px-12 pb-16 sm:pb-20 z-10 relative max-w-4xl mx-auto ">
       <h1 className="tracking-tight text-black text-center font-bold text-4xl md:text-6xl lg:font-extrabold lg:text-5xl, xl:text-6xl">
@@ -19,6 +53,7 @@ export default function Contact({}: Props) {
               className="shadow-sm p-2 block w-full sm:text-sm border border-wayfast-green focus:outline-none focus:border-atgBlue rounded-xl"
               placeholder="FULL NAME"
               name="name"
+              value={name}
             />
           </div>
           <div className="relative">
@@ -27,6 +62,7 @@ export default function Contact({}: Props) {
               className="shadow-sm p-2 block w-full sm:text-sm border border-wayfast-green focus:outline-none focus:border-atgBlue rounded-xl"
               placeholder="PHONE NUMBER"
               name="phone"
+              value={number}
             />
           </div>
           <div className="relative">
@@ -35,6 +71,7 @@ export default function Contact({}: Props) {
               className="shadow-sm p-2 block w-full sm:text-sm border border-wayfast-green focus:outline-none focus:border-atgBlue rounded-xl"
               placeholder="EMAIL ADDRESS"
               name="email"
+              value={email}
             />
           </div>
           <div className="relative">
@@ -43,6 +80,7 @@ export default function Contact({}: Props) {
               className="shadow-sm p-2 block w-full sm:text-sm border border-wayfast-green focus:outline-none focus:border-atgBlue rounded-xl"
               placeholder="COMPANY NAME"
               name="company"
+              value={company}
             />
           </div>
         </div>
@@ -53,7 +91,6 @@ export default function Contact({}: Props) {
           <div className="flex items-center mt-3">
             <input
               type="checkbox"
-              value="hanging"
               name="product"
               className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"
             />

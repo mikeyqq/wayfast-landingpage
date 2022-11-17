@@ -28,10 +28,11 @@ export default function Section({}: Props) {
           </div>
         </div>
 
-        <div className="hidden lg:flex lg:mt-20" id="intro-video-md">
+        <div className="hidden lg:flex lg:mt-20 lg:col-span-6">
           <iframe
             src="https://www.youtube.com/embed/eOtIKVcEmfk?autoplay=1&amp;mute=1&amp;controls=0&amp;origin=https%3A%2F%2Fwww.gowayfast.com&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;iv_load_policy=3&amp;modestbranding=1&amp;enablejsapi=1&amp;widgetid=3"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            className="w-full"
           ></iframe>
         </div>
         <div className="my-10 aspect-w-16 aspect-h-9 lg:hidden ">
