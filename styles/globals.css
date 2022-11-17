@@ -170,6 +170,17 @@
     color: black;
     background-color: white;
   }
+
+  #footer-contact {
+    color: white;
+  }
+
+  #intro-video-md {
+    grid-column-start: 7;
+    grid-column-end: 13;
+  }
 }
 
 /* font-thin text-base hover:font-medium text-white*/
+/*start at  7*/
+/* end at 12*/

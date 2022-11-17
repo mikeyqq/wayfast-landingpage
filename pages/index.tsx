@@ -9,6 +9,7 @@ import Product from "../components/Product";
 import Battery from "../components/Battery";
 import Partner from "../components/Partner";
 import Contact from "../components/Contact";
+import Footer from "../components/Footer";
 
 const Home: NextPage = () => {
   return (
@@ -41,6 +42,7 @@ const Home: NextPage = () => {
       <Contact />
 
       {/* Footer */}
+      <Footer />
     </div>
   );
 };
