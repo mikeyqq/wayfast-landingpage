@@ -7,6 +7,7 @@ import Info from "../components/Info";
 import Feature from "../components/Feature";
 import Product from "../components/Product";
 import Battery from "../components/Battery";
+import Partner from "../components/Partner";
 
 const Home: NextPage = () => {
   return (
@@ -33,6 +34,7 @@ const Home: NextPage = () => {
       <Battery />
 
       {/* Partners */}
+      <Partner />
 
       {/* Contact */}
 
